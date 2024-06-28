@@ -1,0 +1,232 @@
+/* ukuran font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,700;1,400;1,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  background-color: #1e1e1e;
+}
+
+/* Navbar */
+nav {
+  max-width: 1500px;
+  margin: auto;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  border-bottom: 1px solid #fff;
+}
+
+.navbar-logo {
+  max-width: 50px;
+}
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.navbar-nav a {
+  font-size: 1.5rem;
+  position: relative;
+  padding-bottom: 0.2rem;
+  color: #fff;
+}
+
+.navbar-nav a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #8d960c;
+  transition: all 0.2s ease;
+}
+
+.navbar-nav a:hover::after {
+  width: 50%;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: #10209b;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2f3b99;
+}
+
+/* body */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 7rem 2rem;
+}
+
+header {
+  position: relative;
+  padding-top: 2rem;
+  display: grid;
+  align-items: center;
+}
+
+header .content h4 {
+  margin-bottom: 0.5rem;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+header .content h1 {
+  margin-bottom: 0.5rem;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+header .content h1 span {
+  color: #8d960c;
+  font-style: italic;
+}
+
+header .content p {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.header {
+  max-width: 600px;
+  font-weight: 700;
+  font-size: 3rem;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+}
+
+.harga {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.harga .card {
+  padding: 3rem 2rem;
+  background-color: #444242;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid transparent;
+  border-color: #fff;
+  transition: all 0.3s ease;
+  border-radius: 20px;
+}
+
+.harga .card:hover {
+  background-color: #353434;
+  color: #fff;
+}
+
+.harga .card .content {
+  flex: 1;
+  margin-bottom: 2rem;
+}
+
+.harga .card h3 {
+  margin-bottom: 1rem;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.harga .card h4 {
+  color: #fff;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+  border-bottom: 2px dashed;
+}
+
+.harga .card p {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.harga .card p i {
+  color: #fff;
+  font-size: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.harga .btn {
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid;
+}
+
+.harga .btn:hover {
+  background-color: #10209b;
+  border-color: #10209b;
+}
+
+.header1 {
+  position: relative;
+  padding-top: 2rem;
+  display: grid;
+  align-items: center;
+  color: #fff;
+  max-width: 1200px;
+}
+
+h1 {
+  text-align: left;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  font-weight: 700;
+}
+
+td {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 20px;
+  width: 20%;
+  padding: 2px;
+  margin-bottom: 2px;
+  /* border: 1px solid #ccc; */
+}
+
+footer p {
+  position: relative;
+  align-items: center;
+  color: #fff;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+  text-align: center;
+}
