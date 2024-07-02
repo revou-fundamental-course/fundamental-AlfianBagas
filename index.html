@@ -63,7 +63,7 @@
               Panduan teknik
             </p>
           </div>
-          <button class hidden="btn">Join</button>
+          <button class="btn">Join</button>
         </div>
         <div class="card">
           <div class="content">
@@ -82,7 +82,7 @@
               Gabung team
             </p>
           </div>
-          <button class hidden="btn">Join</button>
+          <button class="btn">Join</button>
         </div>
         <div class="card">
           <div class="content">
@@ -105,7 +105,7 @@
               masuk kedalam team e-sport
             </p>
           </div>
-          <button class hidden="btn">Join</button>
+          <button class="btn">Join</button>
         </div>
       </div>
     </section>
@@ -113,37 +113,51 @@
     <!-- Hero section 3 -->
     <section class="container">
       <h1 class="header1">Massage Us</h1>
-      <div class="data">
-        <form action="#" method="post">
-          <table>
-            <tr>
-              <td>Nama</td>
-              <td><input type="text" /></td>
-            </tr>
-            <tr>
-              <td>Tanggal Lahir</td>
-              <td><input type="date" /></td>
-            </tr>
-            <tr>
-              <td>Jenis Kelamin</td>
-              <td><input type="radio" name="jk" /> Laki-laki</td>
-              <td><input type="radio" name="jk" /> Perempuan</td>
-            </tr>
-            <tr>
-              <td>Pesan</td>
-              <td><input type="text" /></td>
-            </tr>
-          </table>
-          <button class="btn">Submit</button>
-        </form>
-      </div>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="nama">Nama</label>
+          <input type="text" id="nama" name="nama" required />
+        </div>
+        <div class="form-group">
+          <label for="tanggal_lahir">Tanggal Lahir</label>
+          <input type="date" id="tanggal_lahir" name="tanggal_lahir" required />
+        </div>
+        <div class="form-group">
+          <label>Jenis Kelamin:</label><br />
+          <input
+            type="radio"
+            id="laki_laki"
+            name="jenis_kelamin"
+            value="Laki-laki"
+            required
+          />
+          <label for="laki_laki">Laki-laki</label>
+          <input
+            type="radio"
+            id="perempuan"
+            name="jenis_kelamin"
+            value="Perempuan"
+            required
+          />
+          <label for="perempuan">Perempuan</label>
+        </div>
+        <div class="form-group">
+          <label for="hobby">Hobby:</label>
+          <input type="text" id="hobby" name="hobby" />
+        </div>
+        <div class="form-group">
+          <label for="pesan">Pesan</label>
+          <textarea id="pesan" name="pesan"></textarea>
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Kirim Pesan" />
+        </div>
+      </form>
     </section>
 
     <!-- footer -->
     <footer>
-      <p>
-        Copyright © 2024 by AlfianBagas
-      </p>
+      <p>Copyright © 2024 by AlfianBagas</p>
     </footer>
 
     <script>
@@ -151,3 +165,4 @@
     </script>
   </body>
 </html>
+
